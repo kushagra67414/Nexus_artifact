@@ -5,7 +5,7 @@
 
 Deploying maven created jar file at nexus repository manager platform.
 
-Step-1: <br>
+**Step-1:** <br>
 Download nexus 3.18.1-01. Extract it you will find two file : <br>
 a.	nexus-3.18.1-01		b. sonatype-work   (here Configurations are stored) <br>
 
@@ -16,7 +16,7 @@ run command :     nexus.exe   /run <br>
 
 You will see such screen in your command line.
 
-Step-2 <br>
+**Step-2** <br>
 
 Open browser and type localhost:8081 <br>
 Nexus Repository Dashboard will be open. <br>
@@ -29,7 +29,7 @@ After this it will ask for the new password and submit and you will enter in you
 ![image](https://user-images.githubusercontent.com/46487696/120102213-87426600-c167-11eb-8ea3-1a3999910e2f.png)
 
 
-Step-3: <br>
+**Step-3:** <br>
 To Create Repository <br>
 
 Go to “Setting> Repository> Create Repository” and click <br>
@@ -45,7 +45,7 @@ Now Create the repo. <br>
 
 ![image](https://user-images.githubusercontent.com/46487696/120102247-b6f16e00-c167-11eb-9e22-e4ea2952ac61.png)
 
-Step-4: <br>
+**Step-4:** <br>
 Goto maven folder location , open  Conf folder and then open settings xml document. <br>
 Write the below command too. <br>
 a.	Id can be anything according to you. <br>
@@ -60,7 +60,7 @@ b.	Username and password same as nexus repo manager web application <br>
 
 ![image](https://user-images.githubusercontent.com/46487696/120102256-c1136c80-c167-11eb-955b-b494774a7ce3.png)
 
-Step-5: <br>
+**Step-5:** <br>
 Since we have to deploy so we will run mvn deploy command. <br>
 For this we have to some changes in our maven project pom file to connect to the nexus repo manager. <br>
 
@@ -84,7 +84,7 @@ B.
  
 ![image](https://user-images.githubusercontent.com/46487696/120102265-ca9cd480-c167-11eb-8536-eeb16adf6885.png)
 
-Step-6: <br>
+**Step-6:** <br>
 
 Goto the maven project where pom file is stored. <br>
 Run command “mvn deploy” <br>
